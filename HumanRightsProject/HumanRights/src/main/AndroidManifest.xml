@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.upperechelon.humanrights"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Human Rights"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="info.upperechelon.humanrights.SectionListActivity"
+            android:label="Universal Human Rights" >
+            <intent-filter android:label="Human Rights" >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="info.upperechelon.humanrights.SectionDetailActivity"
+            android:label="Universal Human Rights"
+            android:parentActivityName=".SectionListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionListActivity" />
+        </activity>
+    </application>
+
+</manifest>
